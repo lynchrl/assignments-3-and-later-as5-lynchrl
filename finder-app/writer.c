@@ -14,6 +14,7 @@
 
 int main(int argc, char *argv[])
 {
+    // Check for correct number of arguments (2 + program name)
     if (argc != 3)
     {
         fprintf(stderr, "Usage: %s <filename> <string>\n", argv[0]);
@@ -24,6 +25,7 @@ int main(int argc, char *argv[])
     const char *filename = argv[1];
     const char *string = argv[2];
 
+    // O_CREAT to create the file if it doesn't exist.
     int fd = open(filename, O_WRONLY | O_CREAT | O_TRUNC, 0644);
     if (fd == -1)
     {

@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 # Assignment 1 Finder Script. Searches files under the specified directory for
 # the given string.
 

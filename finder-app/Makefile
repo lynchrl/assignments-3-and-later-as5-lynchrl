@@ -4,6 +4,8 @@
 # empty to use the native compiler.
 CROSS_COMPILE ?=
 
+all: writer
+
 writer: writer.o
 	$(CROSS_COMPILE)gcc -o writer writer.o
 
